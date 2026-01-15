@@ -393,6 +393,11 @@ nav{
 .social{
     display: flex;
     justify-content: space-between;
+    height: 60px;
+}
+
+.social img{
+    
 }
 
 .social-icons{
@@ -410,4 +415,17 @@ nav{
 
 .social-icons img{
     margin-right: 16px;
+}
+
+hr{
+    margin-top: 80px;
+    color: #e5e7eb;
+    opacity: 15%;
+}
+
+.footer-txt{
+    padding-top: 30px;
+    text-align: center;
+    color: #FAFAFA;
+    line-height: 24px;
 }
