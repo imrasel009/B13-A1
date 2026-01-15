@@ -1,3 +1,383 @@
 *{
-    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+nav{
+    width: 100%;
+    height: 92px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 152%;
+}
+
+.btn{
+    background-color: #469165;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer
+}
+
+
+#hero {
+  width: 100%;
+  height: 674px;
+  padding-top: 115px;
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-items: center;
+}
+
+.top-btn{
+    width: 14%;
+    height: 36px;
+    border-radius: 1000px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    /* padding-top: 8px; */
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-btn a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #469165;
+    text-decoration: none;
+}
+
+.layer1 {
+    background-color: #4691654d;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer2 {
+    background-color: #469165ab;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer3 {
+    background-color: #469165;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.txt{ 
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.txt h1{
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.txt p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.green{
+    color: #30B868;
+}
+
+.lower-btn{
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+}
+
+.lower-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: 20;
+}
+
+.btnn{
+    background-color: #469165;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 52px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.lower-btn .btnn img{
+    width: 20px;
+    height: 20px;
+}
+
+.trans{
+    font-size: 16px;
+    font-weight: 600;
+    width: 198px;
+    height: 52px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#skills{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-heading{
+    width: 85%;
+    height: 117px;
+    justify-items: center;
+    align-items: baseline;
+    
+}
+
+.skills-heading h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #001931;
+    margin-bottom: 0;
+    
+}
+
+.skills-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #627382;
+    margin-top: 16px;
+}
+
+.skills-box{
+    width: 85%;
+    height: 300px;
+    display: flex;
+    padding-top: 44px;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.skill-card{
+    height: 300px;
+    width: 322px;
+    align-items: baseline;
+    justify-items: center;
+    padding: 24px;
+    border-radius: 8px;
+    padding-top: 70px;
+    box-shadow: 0 0 8px 0 #0000003b;
+}
+
+.image-box{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #F95555;
+  padding: 14px 14px;
+}
+
+.skill-card .image-box img {
+  width: 32px;
+  height: auto;
+  border: none;
+  color: #FFFFFF;
+}
+
+.skill-card h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #001931;
+    height: 58px;
+    width: 274px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.skill-card p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #627382;
+    text-align: center;
+}
+
+#info{
+    width: 100%;
+    height: 840px;
+    padding: 120px 120px;
+    display: flex;
+    gap: 60px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.info-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.txt-bold h6{
+    font-size: 16px;
+    font-weight: 500;
+    color: #469165;
+    margin-bottom: 16px;
+}
+
+.txt-bold h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.txt-bold p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #627382;
+    line-height: 20px;
+}
+.checkmark-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkmark{
+    display: flex;
+    gap: 6px;
+}
+
+.checkmark p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #001931;
+}
+
+#think{
+    width: 100%;
+    height: 507px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.think-container{
+    width: 85%;
+    height: 385px;
+    border-radius: 12px;
+    padding: 80px;
+    background-color: #F7F6F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.think-container h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.think-container p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #627382;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.think-container .bt a{
+    text-decoration: none;
+    line-height: normal;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: 20;
+}
+
+.think-container .bt img{
+    width: 20px;
+    height: 20px;
+}
+
+.bt{
+    background-color: #469165;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 52px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+
 }
